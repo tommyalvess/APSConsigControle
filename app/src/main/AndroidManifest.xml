@@ -12,7 +12,7 @@
         <activity
                 android:name=".SplashScreemActivity"
                 android:label="@string/app_name"
-                android:theme="@style/FullscreenTheme">
+                android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -24,7 +24,20 @@
                 android:label="@string/title_activity_home"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name=".Activies.LoginActivity">
+        <activity android:name=".Activies.LoginActivity"
+                  android:theme="@style/Theme.Design.NoActionBar">
+        </activity>
+        <activity android:name=".Activies.ProdDiariaActivity">
+        </activity>
+        <activity android:name=".Activies.ProdSemanalActivity">
+        </activity>
+        <activity android:name=".Activies.ProdGeralActivity">
+        </activity>
+        <activity android:name=".Activies.DestaqueActivity">
+        </activity>
+        <activity android:name=".Activies.ComissaoActivity">
+        </activity>
+        <activity android:name=".Activies.BonusActivity">
         </activity>
     </application>
 

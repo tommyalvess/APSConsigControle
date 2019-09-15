@@ -3,49 +3,34 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
         <item
                 android:id="@+id/home"
-                android:icon="@drawable/ic_menu_camera"
+                android:icon="@drawable/ic_home_black_24dp"
                 android:title="Home"/>
         <item
                 android:id="@+id/prod_diaria"
-                android:icon="@drawable/ic_menu_camera"
+                android:icon="@drawable/ic_show_prod_black_24dp"
                 android:title="Produção Diária"/>
         <item
                 android:id="@+id/prod_semanal"
-                android:icon="@drawable/ic_menu_gallery"
+                android:icon="@drawable/ic_multiline_prod3_black_24dp"
                 android:title="Produção Semanal"/>
         <item
                 android:id="@+id/prod_geral"
-                android:icon="@drawable/ic_menu_slideshow"
+                android:icon="@drawable/ic_insert_prod2_black_24dp"
                 android:title="Produção Geral"/>
         <item
                 android:id="@+id/destaque"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@drawable/ic_destaque_black_24dp"
                 android:title="Destaque do Mês"/>
         <item
                 android:id="@+id/comissao"
-                android:icon="@drawable/ic_menu_manage"
+                android:icon="@drawable/ic_monetization_on_black_24dp"
                 android:title="Comissão"/>
         <item
                 android:id="@+id/bonus"
-                android:icon="@drawable/ic_menu_manage"
-                android:title="Bônus Semanal"/>
+                android:icon="@drawable/ic_attach_comissao_black_24dp"
+                android:title="Bônus Semanal" android:layout_height="match_parent"/>
 
-    </group>
-
-    <item android:title="Communicate">
-        <menu>
-            <item
-                    android:id="@+id/nav_share"
-                    android:icon="@drawable/ic_menu_share"
-                    android:title="Share"/>
-            <item
-                    android:id="@+id/nav_send"
-                    android:icon="@drawable/ic_menu_send"
-                    android:title="Send"/>
-        </menu>
-    </item>
 
 </menu>
