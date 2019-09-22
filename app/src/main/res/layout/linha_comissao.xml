@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.daimajia.swipe.SwipeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/swipe"
+            app:leftEdgeSwipeOffset="0dp"
+            app:rightEdgeSwipeOffset="0dp"
+            android:background="@color/subTitTema"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+                android:id="@+id/bottom_wraper"
+                android:layout_width="145dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/pagar"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/verde"
+                    android:gravity="center"
+                    android:text="Pagar"
+                    android:textColor="#fff"/>
+
+        </LinearLayout>
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <RelativeLayout
+                    android:id="@+id/imgUserP"
+                    android:layout_width="71dp"
+                    android:layout_height="72dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                <com.gauravbhola.ripplepulsebackground.RipplePulseLayout
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:clipChildren="false"
+                        app:rippleColor="@color/txtTema"
+                        app:rippleType="stroke"
+                        app:strokeWidth="3dp"
+                        app:startRadius="5dp"
+                        app:endRadius="38dp"
+                        app:duration="5100"
+                        android:id="@+id/layout_ripplepulse">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imgPerfilK"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="9dp"
+                            android:background="@drawable/circle"
+                            android:padding="3dp" />
+
+                </com.gauravbhola.ripplepulsebackground.RipplePulseLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/txtNomeP"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Nome"
+                    android:textSize="18dp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="5dp"/>
+
+            <TextView
+                    android:id="@+id/txtTellP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Meta: "
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNomeP"
+                    tools:ignore="MissingConstraints"/>
+
+            <TextView
+                    android:id="@+id/txtEmailP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Produção:"
+                    android:textSize="14dp"
+                    app:layout_constraintTop_toBottomOf="@+id/txtNomeP"
+                    tools:ignore="MissingConstraints" app:layout_constraintStart_toEndOf="@+id/txtTellP"
+                    android:layout_marginStart="8dp" android:layout_marginTop="4dp"/>
+
+            <android.support.constraint.Guideline
+                    android:id="@+id/guideline7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="88dp" />
+
+            <View
+                    android:id="@+id/view"
+                    android:layout_width="294dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="88dp"
+                    android:background="@color/txtTema"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
+            <TextView
+                    android:text="Comissão:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView8" app:layout_constraintStart_toStartOf="@+id/guideline7"
+                    android:layout_marginEnd="205dp" app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/txtTellP"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </com.daimajia.swipe.SwipeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

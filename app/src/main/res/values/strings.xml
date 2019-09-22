@@ -11,4 +11,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_prod_diaria">ProdDiariaActivity</string>
+    <string name="ndice_de_produ_o">Índice de Produção</string>
+    <string name="contratos_inseridos">Contratos Inseridos</string>
+    <string name="todo">TODO</string>
+    <string name="contratos_pagos">Contratos Pagos</string>
+    <string name="contratos_cancelados">Contratos Cancelados</string>
 </resources>

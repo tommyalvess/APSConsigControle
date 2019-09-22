@@ -96,12 +96,26 @@ public class HomeActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.prod_semanal) {
+            Intent intent = new Intent(this, ProdSemanalActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.prod_geral) {
+            Intent intent = new Intent(this, ProdGeralActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.destaque) {
+            Intent intent = new Intent(this, DestaqueActivity.class);
+            startActivity(intent);
 
-        } 
+        } else if (id == R.id.comissao) {
+            Intent intent = new Intent(this, ComissaoActivity.class);
+            startActivity(intent);
+
+        }else if (id == R.id.bonus) {
+            Intent intent = new Intent(this, BonusActivity.class);
+            startActivity(intent);
+
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

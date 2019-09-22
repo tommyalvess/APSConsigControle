@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ndice_de_produ_o">Índice de Produção</string>
+    <string name="contratos_inseridos">Contratos Inseridos</string>
+    <string name="todo">TODO</string>
+    <string name="contratos_pagos">Contratos Pagos</string>
+    <string name="contratos_cancelados">Contratos Cancelados</string>
+</resources>
